@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/react-simple-dropdown",
-  "version": "3.2.3-fork",
+  "version": "3.2.3",
   "description": "Non-prescriptive React.js dropdown toolkit",
   "main": "lib/components/dropdown.js",
   "scripts": {
