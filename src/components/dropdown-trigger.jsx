@@ -18,11 +18,13 @@ DropdownTrigger.displayName = 'DropdownTrigger';
 
 DropdownTrigger.propTypes = {
   children: PropTypes.node,
-  className: PropTypes.string
+  className: PropTypes.string,
+  type: PropTypes.string
 };
 
 DropdownTrigger.defaultProps = {
-  className: ''
+  className: '',
+  type: 'DropdownTrigger'
 };
 
 export default DropdownTrigger;

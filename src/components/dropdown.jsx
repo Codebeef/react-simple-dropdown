@@ -83,7 +83,7 @@ class Dropdown extends Component {
     });
     // stick callback on trigger element
     const boundChildren = React.Children.map(children, child => {
-      if (child.type === (<DropdownTrigger />).type) {
+      if (child.props.type === 'DropdownTrigger') {
         const originalOnClick = child.props.onClick;
         child = cloneElement(child, {
           ref: 'trigger',
@@ -96,7 +96,7 @@ class Dropdown extends Component {
             }
           }
         });
-      } else if (child.type === (<DropdownContent />).type && removeElement && !active) {
+      } else if (child.props.type === 'DropdownContent' && removeElement && !active) {
         child = null;
       }
       return child;

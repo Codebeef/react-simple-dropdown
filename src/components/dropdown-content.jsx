@@ -18,11 +18,13 @@ DropdownContent.displayName = 'DropdownContent';
 
 DropdownContent.propTypes = {
   children: PropTypes.node,
-  className: PropTypes.string
+  className: PropTypes.string,
+  type: PropTypes.string
 };
 
 DropdownContent.defaultProps = {
-  className: ''
+  className: '',
+  type: 'DropdownContent'
 };
 
 export default DropdownContent;
